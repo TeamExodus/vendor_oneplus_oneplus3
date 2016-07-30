@@ -17,9 +17,14 @@
 # Pick up overlay for features that depend on non-open-source files
 PRODUCT_PACKAGES += \
     CNEService \
+    com.qualcomm.location \
+    datastatusnotification \
+    embms \
+    dpmserviceapp \
     fastdormancy \
     ims \
     imssettings \
+    QtiTelephonyService \
     QtiTetherService \
     shutdownlistener \
     TimeService
@@ -33,6 +38,12 @@ PRODUCT_PACKAGES += \
     libloc_api_v02
 
 PRODUCT_PACKAGES += \
-    libtime_genoff
+    libtime_genoff \
+    libthermalclient
+
+PRODUCT_PACKAGES += \
+    colorservice \
+    qdcm_calib_data_samsung_s6e3fa3_1080p_cmd_mode_dsi_panel.xml \
+    qdcm_calib_data_samsung_s6e3fa3_1080p_video_mode_dsi_panel.xml
 
 $(call inherit-product, vendor/oneplus/oneplus3/oneplus3-vendor-blobs.mk)
