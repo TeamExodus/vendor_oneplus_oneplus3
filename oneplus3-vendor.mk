@@ -675,13 +675,13 @@ PRODUCT_PACKAGES += \
     dpmserviceapp \
     qcrilmsgtunnel \
     QtiTetherService \
-    xtra_t_app \
     colorservice \
     ims \
     imssettings \
     qcnvitems \
     qcrilhook
 endif
+#    xtra_t_app \
 
 -include vendor/extra/devices.mk
 ifneq ($(call is-qc-perf-target),true)
